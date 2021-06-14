@@ -4,12 +4,13 @@
 - Fork https://github.com/ufuu/FlaskAppCodeDeploy.git
 
 ### Step 2 
-- Get Terraform code from https://github.com/ufuu/awslambda/tree/master/github_actions_ec2 and change git repo url in script.tpl file(line 14). 
+- Get Terraform code from https://github.com/ufuu/awslambda/tree/master/github_actions_ec2 and change the `git repo url` in `script.tpl` file (line 14). 
 - Also create an SSH key using ssh-keygen command.
 
 ### Step 3
 - Now apply the code.
-- This will create our code deploy job along with an auto-scaling group with 2 EC2 instances, running behind an ALB. Once setup is created, try accessing ALB url and make sure our app is running
+- This will create our code deploy job along with an auto-scaling group with 2 EC2 instances, running behind an ALB. 
+- Once setup is created, try accessing ALB url and make sure our app is running
 
 ### Step 4
 - In the repo,Go to Actions and Enable work flow. Also create these 2 secrets (Settings-Secrets) which are required to trigger Code Deploy job.
